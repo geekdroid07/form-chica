@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Form for Chica</title>
+	<link rel="stylesheet" href="/css/bootstrap.min.css">
+	<link rel="stylesheet" href="/css/styles.css">
+    <script src="/js/app.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="page-header">
+			<h1>Formulario <small>Angely</small></h1>
+		</div>
+
+		<div class="col-md-12">
+				<div class="row">
+					<div class="card">
+						<div class="card-body">
+	
+							<div class="col-md-12">
+								<form action="/save-comment" method="post" style="display: flex; flex-direction: column;" class="form-group">
+									
+									<div style="display: flex;" class="col-md-12">
+										<div class="col-md-12">
+											<label for="name">Nombre: </label>
+											<input type="text" name="nombre" size="25" class="form-control"  placeholder="Escriba nombre a colocar">
+										</div>
+
+										<div class="col-md-12">
+											<label for="name">Artículo: </label>								
+											<select name="articulo" onChange="ponModelo(this.form)" class="form-control">
+												<option selected>Elige artículo...</option>
+												<option>Taza</option>
+												<option>Termo</option>
+												<option>Vasos</option>
+												<option>Llaveros</option>
+											</select>
+										</div>
+										
+										<div class="col-md-12">
+											<label for="name">Modelo: </label>
+											<select name="modelo" onChange="ponColores(this.form)" class="form-control">
+											</select>
+										</div>
+		
+
+										
+										<div class="col-md-12">
+											<label for="name">Colores: </label>
+											<select name="colores" class="form-control">
+												<option selected>Elige color...</option>	
+											</select>
+										</div>
+									</div>
+	
+									<div style="margin: 20px 0;">
+										<label for="name">Detalles: </label>
+										<textarea name="detalles" placeholder="Colocar detalles adicionales" class="form-control" cols="30" rows="3"></textarea>
+									</div>
+									<button type="submit" class="btn boton">Enviar</button>
+	
+								</form>
+
+							</div>
+	
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+	</div>
+	
+		
+</body>
+</html>
